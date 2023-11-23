@@ -20,7 +20,7 @@ En el mundo digital actual, las plataformas Yelp y Google Maps han emergido como
 
 Google Maps, conocida por su funcionalidad de navegación, se ha transformado en un indispensable directorio de recomendaciones. Integrada con reseñas, esta herramienta no solo guía a los usuarios hacia su destino, sino que también les ofrece una visión detallada de la calidad de los negocios locales. Más que simples estrellas, las opiniones proporcionan narrativas ricas, destacando aspectos clave que definen la experiencia del usuario.
 
-En conclusión, la transformación de plataformas como Yelp y Google Maps va más allá de ser meros directorios digitales; se han convertido en auténticos narradores de historias, donde las experiencias de los consumidores y los negocios se entrelazan. Al explorar estas plataformas, los usuarios no solo encuentran información, sino testimonios valiosos que les permiten tomar decisiones informadas. Estas narrativas colectivas sirven como faros digitales, guiando a los usuarios hacia elecciones fundamentadas y experiencias gratificantes en un mundo cada vez más centrado en la voz compartida.
+En conclusión, la transformación de plataformas como Yelp y Google Maps va más allá de ser directorios digitales; se han convertido en auténticos narradores de historias, donde las experiencias de los consumidores y los negocios se entrelazan. Al explorar estas plataformas, los usuarios no solo encuentran información, sino testimonios valiosos que les permiten tomar decisiones informadas. Estas narrativas colectivas sirven como faros digitales, guiando a los usuarios hacia elecciones fundamentadas y experiencias gratificantes en un mundo cada vez más centrado en la voz compartida.
 
 
 ## Objetivo y alcance del proyecto:
@@ -35,16 +35,6 @@ Dashboard Interactivo: Desarrollaremos un dashboard interactivo que presentará 
 API Funcional en un Servicio Web: Implementaremos una API funcional alojada en un servicio web que proporcionará recomendaciones de restaurantes a los usuarios. Estas recomendaciones podrán basarse en la categoría de los restaurantes o en características similares, utilizando datos recopilados de plataformas de reseñas populares.
 
 Nuestro enfoque se centrará en brindar a nuestro cliente las herramientas necesarias para tomar decisiones informadas, aprovechando la gran cantidad de datos disponibles en estas plataformas de reseñas. Este análisis permitirá a la agencia de viajes ofrecer experiencias gastronómicas excepcionales a sus clientes, respaldadas por la voz auténtica de la comunidad.
-
-## KPIS 
-Indicadores Clave de Desempeño (KPIs)
-Se establecieron los siguientes indicadores clave de desempeño:
-
-Valoración promedio (estrellas) mínima
-
-Satisfacción_cliente = Cantidad de reseñas con expresión de sentimiento positivo / total reseñas (definir procentaje minimo)
-
-Evolución Satisfacción cliente = Satisfacción_cliente / Satisfacción_cliente año anterior.
 
 
 ## Indicadores Clave de Desempeño (KPIs):
@@ -67,9 +57,15 @@ La evolución de la satisfacción del cliente es una métrica dinámica que comp
 la formula es la siguiente:
 **Evolución Satisfacción cliente = Satisfacción_cliente / Satisfacción_cliente año anterior.**
 
+* **Check-ins Porcentual por Año**:
+El KPI de Check-ins Porcentual por Año evalúa la variación en la frecuencia de check-ins de clientes en un establecimiento o ubicación específica a lo largo del tiempo. Este indicador proporciona insights sobre la tendencia de la participación del cliente en diferentes períodos y es útil para comprender patrones estacionales o cambios en la popularidad del lugar. La formula es la siguiente: 
+**Check-ins Porcentual por Año = Numero total de check-in en el año actual / Numero total de check-in en el año anterior.**
+
+* **Check-ins Porcentual por Mes**: El KPI de Check-ins Porcentual por Mes evalúa la variación mensual en la frecuencia de check-ins de clientes en un establecimiento o ubicación específica. La formula es la siguiente: 
+**Check-ins Porcentual por Año = Numero total de check-in en el mes actual / Numero total de check-in en el mes anterior.**
 
 ## Metodologías
-La metodología usada para este proyecto es la Scrum, la cual es altamente eficaz en entornos dinámicos y colaborativos. Scrum se destaca por su enfoque iterativo e incremental, dividiendo el proyecto en sprints manejables con entregables tangibles al final de cada iteración. Esto no solo permite una entrega temprana de valor, sino que también facilita la adaptabilidad a medida que los requisitos evolucionan.
+Este proyecto se basa en la metodología Scrum, la cual es altamente eficaz en entornos dinámicos y colaborativos. Scrum se destaca por su enfoque iterativo e incremental, dividiendo el proyecto en sprints manejables con entregables tangibles al final de cada iteración. Esto no solo permite una entrega temprana de valor, sino que también facilita la adaptabilidad a medida que los requisitos evolucionan.
 
 ## Stack Tecnológico 
 
