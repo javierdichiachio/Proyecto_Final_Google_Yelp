@@ -11,7 +11,7 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 ## Equipo encargado del proyecto
 
 <p align="center">
-<img src="src\integrantes.png" height=200>
+<img src="src\integrantes2.png" height=250>
 </p>
 
 ## Planteamiento del Proyecto 
@@ -68,6 +68,9 @@ El KPI de Check-ins Porcentual por Año evalúa la variación en la frecuencia d
 Este proyecto se basa en la metodología Scrum, la cual es altamente eficaz en entornos dinámicos y colaborativos. Scrum se destaca por su enfoque iterativo e incremental, dividiendo el proyecto en sprints manejables con entregables tangibles al final de cada iteración. Esto no solo permite una entrega temprana de valor, sino que también facilita la adaptabilidad a medida que los requisitos evolucionan.
 
 ## Stack Tecnológico 
+<p align="center">
+<img src="src\stack.png" height=400>
+</p>
 
 El stack tecnológico seleccionado para este proyecto se compone de herramientas y plataformas líderes que han sido cuidadosamente elegidas para maximizar la eficiencia y la calidad en el desarrollo. Aquí hay una descripción de cada componente y las razones detrás de su elección:
 
