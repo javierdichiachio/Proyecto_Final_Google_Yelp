@@ -14,6 +14,16 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 <img src="src\integrantes2.png" height=250>
 </p>
 
+## Indice
+
+
+- [Planteamiento del Proyecto ](#Planteamiento-del-Proyecto)
+- [Objetivo y alcance del proyecto](#Objeto-y-alcance-del-Proyecto)
+- [Indicadores Clave de Desempeño (KPIs)](#Indicadores-Clave-de-Desempeño (KPIs))
+- [Metodologías](#Metodologías)
+- [Stack Tecnológico ](#Stack-Tecnológico)
+
+
 ## Planteamiento del Proyecto 
 
 En el mundo digital actual, las plataformas Yelp y Google Maps han emergido como referentes clave en la toma de decisiones cotidianas. Yelp, un espacio global de reseñas,democratiza la retroalimentación del consumidor, ofreciendo testimonios que van más allá de simples puntuaciones. Desde restaurantes hasta servicios locales, las experiencias compartidas proporcionan una visión auténtica de la calidad percibida.
