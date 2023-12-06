@@ -96,5 +96,23 @@ El stack tecnológico seleccionado para este proyecto se compone de herramientas
 
 Cada componente de este stack ha sido seleccionado cuidadosamente para contribuir a la eficacia, escalabilidad y calidad del proyecto, garantizando así una implementación exitosa y resultados sobresalientes.
 
+## Producto Machine Learning
+
+En nuestro enfoque innovador de análisis de opiniones de usuarios, aprovechamos técnicas avanzadas de Procesamiento de Lenguaje Natural (PLN) y Machine Learning (ML) con la destacada herramienta NLTK, una biblioteca de Python especializada en el análisis y procesamiento del lenguaje natural.
+
+Utilizando NLTK, llevamos a cabo tareas fundamentales como la tokenización, dividendo el texto en unidades más pequeñas llamadas tokens, lo que resulta crucial para comprender la estructura gramatical y semántica de las opiniones. 
+
+En nuestra metodología, la categorización de la importancia desempeña un papel central, donde técnicas avanzadas de ML asignan pesos a términos y frases específicas en las reseñas. Estos pesos se vinculan directamente con las estrellas asignadas a un restaurante, basándonos en el análisis de sentimiento y la asociación de términos con aspectos clave de la experiencia del usuario, como la calidad de la comida o el servicio.
+
+La integración de NLTK y la categorización de importancia nos permite generar un rating compuesto más preciso y representativo, considerando no solo la calificación numérica de las estrellas, sino también la ponderación contextualizada de elementos específicos. Este enfoque refinado captura la complejidad de las opiniones, incluyendo la intensidad emocional asociada a diferentes aspectos, proporcionando a los usuarios una evaluación más matizada y detallada de cada restaurante.
+
+En resumen, la combinación de NLTK, el análisis de sentimiento y la categorización de importancia en nuestro enfoque innovador de análisis de opiniones garantiza una comprensión más profunda y precisa de las reseñas de usuarios, brindando recomendaciones más informadas y personalizadas.
 
 
+## Conclusión
+
+En el universo de Viajes Expedition, las reseñas se tornan en pilares fundamentales que guían a los usuarios en la elección de los mejores restaurantes durante sus viajes. Este componente esencial se argumenta por diversas razones que reflejan la importancia que estas opiniones tienen en la experiencia gastronómica de los viajeros.
+
+Las reseñas actúan como una guía confiable en la selección de restaurantes, destacando aquellos lugares que han dejado una impresión positiva en otros viajeros. Este componente social de las reseñas no solo influye en la elección de un restaurante en particular, sino que también contribuye a la creación de una experiencia gastronómica compartida entre los usuarios de Viajes Expedition.
+
+En resumen, en el contexto de Viajes Expedition, las reseñas no son solo comentarios aislados, sino herramientas esenciales que moldean las elecciones gastronómicas de los usuarios. Estas opiniones no solo informan, sino que también enriquecen la experiencia de viaje al conectar a los usuarios con los mejores restaurantes, contribuyendo así a una vivencia culinaria memorable durante sus expediciones.
