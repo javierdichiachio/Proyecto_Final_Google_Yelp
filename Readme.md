@@ -5,16 +5,16 @@
 <img src="src\44a8dac5-94bb-4363-a2d7-61b8c6b6959e.jpg"  height=300>
 </p>
 
-## Descripción
+# Descripción
 DataSolutions, es una empresa líder en el campo de análisis de datos, se posiciona como una empresa pionera en la transformación de información en conocimiento accionable. Nuestro enfoque se centra en proporcionar soluciones integrales que aprovechan la ciencia de datos para potenciar la toma de decisiones empresariales.
 
-## Equipo encargado del proyecto
+# Equipo encargado del proyecto
 
 <p align="center">
 <img src="src\integrantes2.png" height=250>
 </p>
 
-## Indice
+# Indice
 
 
 - [Planteamiento del Proyecto ](#Planteamiento-del-Proyecto)
@@ -29,7 +29,7 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 - [Conclusión](#conclusión)
 - [Autores](#autores)
 
-## Planteamiento del Proyecto
+# Planteamiento del Proyecto
 
 En el mundo digital actual, las plataformas Yelp y Google Maps han emergido como referentes clave en la toma de decisiones cotidianas. Yelp, un espacio global de reseñas,democratiza la retroalimentación del consumidor, ofreciendo testimonios que van más allá de simples puntuaciones. Desde restaurantes hasta servicios locales, las experiencias compartidas proporcionan una visión auténtica de la calidad percibida.
 
@@ -38,53 +38,59 @@ Google Maps, conocida por su funcionalidad de navegación, se ha transformado en
 En conclusión, la transformación de plataformas como Yelp y Google Maps va más allá de ser directorios digitales; se han convertido en auténticos narradores de historias, donde las experiencias de los consumidores y los negocios se entrelazan. Al explorar estas plataformas, los usuarios no solo encuentran información, sino testimonios valiosos que les permiten tomar decisiones informadas. Estas narrativas colectivas sirven como faros digitales, guiando a los usuarios hacia elecciones fundamentadas y experiencias gratificantes en un mundo cada vez más centrado en la voz compartida.
 
 
-## Objetivo y alcance del proyecto:
+# Objetivo y alcance del proyecto:
 Como parte de la consultora DataSolutions de data, hemos sido contratados para realizar un análisis del mercado de restaurantes en California.
 
 Nuestro cliente es una destacada agencia de viajes que ofrece tours en español en el estado de California, busca obtener una visión detallada de la opinión de los usuarios en plataformas clave como Yelp y Google Maps con respecto a los diferentes restaurantes de comida latinoamericana. El objetivo principal es proporcionar recomendaciones a sus usuarios basadas en las mismas. 
 
 En este proyecto, nos proponemos montar la infraestructura necesaria y establecer un flujo de datos eficiente para lograr dos productos clave:
 
-Dashboard Interactivo: Desarrollaremos un dashboard interactivo que presentará información actualizada sobre el sector de restaurantes en California. Este recurso será una herramienta valiosa para que nuestro cliente acceda y visualice de manera intuitiva las tendencias, patrones y datos relevantes del mercado.
+>Dashboard Interactivo: Desarrollaremos un dashboard interactivo que presentará información actualizada sobre el sector de restaurantes en California. Este recurso será una herramienta valiosa para que nuestro cliente acceda y visualice de manera intuitiva las tendencias, patrones y datos relevantes del mercado.
 
-API Funcional en un Servicio Web: Implementaremos una API funcional alojada en un servicio web que proporcionará recomendaciones de restaurantes a los usuarios. Estas recomendaciones podrán basarse en la categoría de los restaurantes o en características similares, utilizando datos recopilados de plataformas de reseñas populares.
+>API Funcional en un Servicio Web: Implementaremos una API funcional alojada en un servicio web que proporcionará recomendaciones de restaurantes a los usuarios. Estas recomendaciones podrán basarse en la categoría de los restaurantes o en características similares, utilizando datos recopilados de plataformas de reseñas populares.
 
 Nuestro enfoque se centrará en brindar a nuestro cliente las herramientas necesarias para tomar decisiones informadas, aprovechando la gran cantidad de datos disponibles en estas plataformas de reseñas. Este análisis permitirá a la agencia de viajes ofrecer experiencias gastronómicas excepcionales a sus clientes, respaldadas por la voz auténtica de la comunidad.
 
 
-## Indicadores Clave de Desempeño (KPIs):
+# Indicadores Clave de Desempeño (KPIs):
 
-En el ámbito empresarial y analítico, los Indicadores Clave de Desempeño (KPIs) desempeñan un papel fundamental al ofrecer una medida cuantificable del rendimiento de una organización o proyecto. Estos indicadores permiten evaluar el progreso hacia objetivos específicos, identificar áreas de mejora y tomar decisiones informadas.
+En el ámbito empresarial y analítico, los **Indicadores Clave de Desempeño (KPIs)** desempeñan un papel fundamental al ofrecer una medida cuantificable del rendimiento de una organización o proyecto. Estos indicadores permiten evaluar el progreso hacia objetivos específicos, identificar áreas de mejora y tomar decisiones informadas.
 
-Cuando se trata de analizar el desempeño de un sector, producto o servicio, los KPIs se convierten en herramientas esenciales. Proporcionan una visión clara y objetiva de diversos aspectos, desde la satisfacción del cliente hasta la eficiencia operativa. 
+En este contexto, en nuestro tablero incluiremos los siguientes KPIs:
 
-En este contexto, nos enfocaremos en los siguientes Kpis:
-* **Valoración Promedio (estrellas) Mínima:**
-Este indicador cuantifica la percepción general del público en relación con un producto o servicio. La valoración, expresada en estrellas, sirve como medida visual rápida de la calidad percibida. Establecer un umbral mínimo de valoración promedio garantiza que la oferta mantenga ciertos estándares de calidad, contribuyendo a la toma de decisiones y la mejora continua.
+* **Rating Promedio (estrellas) - Evolución:**
+La valoración o rating promedio cuantifica la percepción general del público en relación con un producto o servicio. La misma se expresa en estrellas, en una escala de 1 a 5, y sirve como medida visual rápida de la calidad percibida; por tal motivo resulta indispensable realizar un seguimiento de la evolución del mismo a través de los años. El **objetivo** propuesto es que el indicador **incremente un 2% como mínimo** respecto del mismo período del año anterior y su fórmula de cálculo es la siguiente:
 
-* **Satisfacción del Cliente:**
-La satisfacción del cliente se convierte en un KPI vital al evaluar el éxito de una iniciativa. Se calcula como la proporción de reseñas con expresión de sentimiento positivo con respecto al total de reseñas. Esta métrica proporciona información detallada sobre cómo los usuarios perciben y experimentan un producto o servicio.
-La formula es la seguiente:
-**Satisfacción_cliente = Cantidad de reseñas con expresión de sentimiento positivo / total reseñas (definir procentaje minimo)**
+  > **Evolución_rating = (Rating promedio / Rating promedio año anterior - 1) * 100**
 
-* **Evolución de la Satisfacción del Cliente:**
-La evolución de la satisfacción del cliente es una métrica dinámica que compara la satisfacción actual con la del año anterior. Este KPI ofrece perspectivas sobre las tendencias a lo largo del tiempo, permitiendo a las organizaciones entender cómo ha evolucionado la percepción del cliente y adaptarse en consecuencia.
-la formula es la siguiente:
-**Evolución Satisfacción cliente = Satisfacción_cliente / Satisfacción_cliente año anterior.**
+<br>
 
-* **Check-ins Porcentual por Año**:
-El KPI de Check-ins Porcentual por Año evalúa la variación en la frecuencia de check-ins de clientes en un establecimiento o ubicación específica a lo largo del tiempo. Este indicador proporciona insights sobre la tendencia de la participación del cliente en diferentes períodos y es útil para comprender patrones estacionales o cambios en la popularidad del lugar. La formula es la siguiente: 
-**Check-ins Porcentual por Año = Numero total de check-in en el año actual / Numero total de check-in en el año anterior.**
+* **Satisfacción del cliente (% Reviews Positivas):**
+La satisfacción del cliente se convierte en un KPI vital al evaluar el éxito de una iniciativa. Se calcula como la proporción de reseñas con expresión de sentimiento positivo (sentiment_score mayor a 0.5) con respecto al total de reseñas, y se establece como **objetivo** para este indicador un valor de **50% como mínimo** en el período de análisis. La fórmula es la siguiente:
 
-* **Check-ins Porcentual por Mes**: El KPI de Check-ins Porcentual por Mes evalúa la variación mensual en la frecuencia de check-ins de clientes en un establecimiento o ubicación específica. La formula es la siguiente: 
-**Check-ins Porcentual por Año = Numero total de check-in en el mes actual / Numero total de check-in en el mes anterior.**
+   > **Satisfacción_cliente = Cantidad de reseñas con expresión de sentimiento positivo / Total reseñas * 100**
+
+<br>
+
+* **Satisfacción del Cliente - Evolución:**
+La evolución de la satisfacción del cliente es una métrica dinámica que compara la satisfacción actual con la del año anterior. Este KPI ofrece perspectivas sobre las tendencias a lo largo del tiempo, permitiendo a las organizaciones entender cómo ha evolucionado la percepción del cliente y adaptarse en consecuencia. El **objetivo** propuesto es que el índice de satisfacción **incremente un 5%** de un año a otro.
+La fórmula es la siguiente:
+
+   > **Evolución_Satisfacción_cliente = Satisfacción_cliente / Satisfacción_cliente año anterior.**
+
+<br>
+
+* **Evolución Checkin - Anual:**
+Este indicador evalúa la variación en la cantidad de accesos de clientes en un establecimiento o ubicación específica a lo largo del tiempo, por lo que el mismo permite realizar un seguimiento de la popularidad del local y planificar la necesidad de personal en distintos momentos del año. El **objetivo** propuesto es un **10% de crecimiento** en la cantidad de accesos respecto del mismo período del año anterior. La fórmula de cálculo es la siguiente: 
+
+   > **Evolución_Checkin = Numero total de accesos en el período actual / Numero total de accesos en el mismo período del año anterior.**
 
 ## Metodologías
 Este proyecto se basa en la metodología Scrum, la cual es altamente eficaz en entornos dinámicos y colaborativos. Scrum se destaca por su enfoque iterativo e incremental, dividiendo el proyecto en sprints manejables con entregables tangibles al final de cada iteración. Esto no solo permite una entrega temprana de valor, sino que también facilita la adaptabilidad a medida que los requisitos evolucionan.
 
 ## Stack Tecnológico 
 <p align="center">
-<img src="src\Stack nuevo.PNG" height=400>
+<img src="src\Stack_nuevo.PNG" height=400>
 </p>
 
 El stack tecnológico seleccionado para este proyecto se compone de herramientas y plataformas líderes que han sido cuidadosamente elegidas para maximizar la eficiencia y la calidad en el desarrollo. Aquí hay una descripción de cada componente y las razones detrás de su elección:
@@ -118,7 +124,7 @@ El proceso de ETL es un proceso fundamental en el mundo de la gestión de datos 
 ## Carga Incremental
 
 <p align="center">
-<img src="src\carga incremental.PNG" height=400>
+<img src="src\carga_incremental.PNG" height=400>
 </p>
 
 La carga incremental es esencial en nuestro proyecto para mantener actualizados nuestros modelos con los nuevos datos de manera eficiente. Este proceso consta de varias etapas automatizadas:
