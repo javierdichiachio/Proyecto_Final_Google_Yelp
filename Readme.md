@@ -17,15 +17,15 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 # Indice
 
 
-- [Planteamiento del Proyecto ](#Planteamiento-del-Proyecto)
-- [Objetivo y alcance del proyecto](#Objeto-y-alcance-del-Proyecto)
-- [Indicadores Clave de Desempeño (KPIs)](#Indicadores-Clave-de-Desempeño (KPIs))
-- [Metodologías](#Metodologías)
-- [Stack Tecnológico ](#Stack-Tecnológico)
+- [Planteamiento del Proyecto](#planteamiento-del-proyecto)
+- [Objetivo y alcance del proyecto](#objetivo-y-alcance-del-proyecto)
+- [Metodologías](#metodologías)
+- [Stack Tecnológico ](#stack-tecnológico)
 - [DataPipeline del proceso de ETL](#datapipeline-del-proceso-de-etl)
 - [Carga Incremental](#carga-incremental)
-- [Producto Machine Learning (ML)](#producto-machine-learning-ml)
-- [Dashboard](#dashboard)
+- [Producto Machine Learning (ML): Sistema de recomendación de restaurantes de comida latinoamericana](#producto-machine-learning-ml-sistema-de-recomendación-de-restaurantes-de-comida-latinoamericana)
+- [Dashboard interactivo en Power BI](#dashboard-interactivo-en-power-bi)
+- [Indicadores Clave de Desempeño (KPIs)](#indicadores-clave-de-desempeño-kpis)
 - [Conclusión](#conclusión)
 - [Autores](#autores)
 
