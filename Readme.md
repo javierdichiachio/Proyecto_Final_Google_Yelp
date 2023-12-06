@@ -22,7 +22,12 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 - [Indicadores Clave de Desempeño (KPIs)](#Indicadores-Clave-de-Desempeño (KPIs))
 - [Metodologías](#Metodologías)
 - [Stack Tecnológico ](#Stack-Tecnológico)
-
+- [DataPipeline del proceso de ETL](#datapipeline-del-proceso-de-etl)
+- [Carga Incremental](#carga-incremental)
+- [Producto Machine Learning (ML)](#producto-machine-learning-ml)
+- [Dashboard](#dashboard)
+- [Conclusión](#conclusión)
+- [Autores](#autores)
 
 ## Planteamiento del Proyecto
 
@@ -79,28 +84,61 @@ Este proyecto se basa en la metodología Scrum, la cual es altamente eficaz en e
 
 ## Stack Tecnológico 
 <p align="center">
-<img src="src\stack.png" height=400>
+<img src="src\Stack nuevo.PNG" height=400>
 </p>
 
 El stack tecnológico seleccionado para este proyecto se compone de herramientas y plataformas líderes que han sido cuidadosamente elegidas para maximizar la eficiencia y la calidad en el desarrollo. Aquí hay una descripción de cada componente y las razones detrás de su elección:
 
 **Google Cloud**: Utilizamos Google Cloud como nuestra plataforma de nube principal debido a su escalabilidad, confiabilidad y conjunto integral de servicios. Google Cloud proporciona un entorno robusto para implementar, gestionar y escalar nuestras aplicaciones y servicios de manera eficiente.
 
-**Jira Software**: Jira Software es una herramienta de gestión de proyectos ágil que facilita la planificación, seguimiento y entrega de software de alta calidad. La elección de Jira Software se basa en su capacidad para respaldar metodologías ágiles, como Scrum, permitiéndonos organizar y priorizar tareas de manera efectiva.
-
 **GitHub**: GitHub es una plataforma esencial para el control de versiones y la colaboración en desarrollo de software. Facilita la colaboración entre miembros del equipo, permitiendo la revisión de código, la gestión de problemas y el seguimiento de cambios. GitHub asegura un flujo de trabajo fluido y una integración continua efectiva.
 
 **Python**: Python se ha convertido en el lenguaje de programación elegido debido a su simplicidad, legibilidad y versatilidad. Es una herramienta poderosa para el análisis de datos, la manipulación de datos y el desarrollo de aplicaciones, lo que lo hace ideal para nuestros propósitos.
+
+**Mage**: es una herramienta de orquestación de contenedores que se utiliza para automatizar la implementación, el escalado y la administración de cargas de trabajo y servicios en contenedores. La orquestación de contenedores es la automatización y gestión del ciclo de vida de contenedores y servicios. Es un proceso de gestión y organización de múltiples contenedores y arquitectura de microservicios a escala.
 
 **NLTK (Natural Language Toolkit)**: NLTK es una biblioteca de Python utilizada para procesar y analizar texto. Su inclusión en el stack tecnológico se debe a su capacidad para trabajar con procesamiento de lenguaje natural (NLP), lo que es esencial para comprender y analizar las reseñas y comentarios en nuestro proyecto.
 
 Cada componente de este stack ha sido seleccionado cuidadosamente para contribuir a la eficacia, escalabilidad y calidad del proyecto, garantizando así una implementación exitosa y resultados sobresalientes.
 
-## Producto Machine Learning
+## DataPipeline del proceso de ETL
 
+<p align="center">
+<img src="src\procesoETL.PNG" height=300>
+</p>
+
+El proceso de ETL es un proceso fundamental en el mundo de la gestión de datos y la informática, ya que permite obtener información significativa y utilizable a partir de múltiples fuentes de datos. Facilita la preparación de datos para su análisis, reporting o para alimentar sistemas que requieren información actualizada y precisa. Este Pipeline describe las diferentes etapas del proceso ETL utilizando herramientas de Google Cloud Platform (GCP).
+
+* `Data soucers:` Durante esta fase, se extraen los datos desde múltiples fuentes. El propósito es almacenar esta información en un entorno de almacenamiento en la nube, comúnmente denominado 'data lake', que proporciona un espacio seguro y escalable para preservar los datos en su forma original. Esta estrategia busca mantener la integridad de los datos brutos, ofreciendo un lugar óptimo para su almacenamiento.
+
+* `Transform (Transformar):` Una vez extraídos los datos, se someten a una serie de transformaciones. Estas pueden incluir limpieza de datos, filtrado, normalización, conversión de formatos, agregación o cualquier proceso que permita preparar los datos para el análisis o el almacenamiento en un repositorio final.
+
+* `Load (Cargar):` En la etapa final, los datos transformados y procesados se cargan en "Google Big Query" definida como nuestro destino. Este destino lo vamos a denominar como nuestro data warehouse. El objetivo es almacenar los datos de manera que sean accesibles y útiles para su posterior análisis o uso.
+
+## Carga Incremental
+
+<p align="center">
+<img src="src\carga incremental.PNG" height=400>
+</p>
+
+La carga incremental es esencial en nuestro proyecto para mantener actualizados nuestros modelos con los nuevos datos de manera eficiente. Este proceso consta de varias etapas automatizadas:
+
+
++ La primera etapa implica la definición de nuestra orquestación mediante la herramienta 'MAGE' para ejecutar nuestro pipeline automáticamente.
+
+
++ Una vez definida la orquestación, llevamos a cabo nuestro datapipeline de ETL automatizado utilizando disparadores, también conocidos como triggers, programados previamente. Este proceso comienza extrayendo fuentes de nuestro almacenamiento de datos (Google Storage), las cuales pasan por el proceso de ETL para finalmente ser almacenadas en nuestro Data Warehouse (Google BigQuery).
+
+
++ Con los triggers programados, podemos actualizar nuestros datos mediante una nueva carga de datos, siguiendo nuestra orquestación. Esta carga almacena los datos nuevos en una nueva tabla en BigQuery, conocida como tabla auxiliar. Esta tabla es útil para comparar la información con datos anteriores y evitar duplicados, asegurándonos de sumar únicamente datos nuevos y únicos.
+
+
++ En la etapa final, ejecutamos una consulta en BigQuery cuya función principal es insertar la información de la tabla auxiliar en las tablas originales, evitando la duplicación de datos. Una vez completada esta operación, eliminamos las tablas auxiliares. Es importante destacar que esta consulta puede realizarse manualmente o automáticamente mediante un disparador previamente programado.
+
+## Producto Machine Learning (ML)
 En nuestro enfoque innovador de análisis de opiniones de usuarios, aprovechamos técnicas avanzadas de Procesamiento de Lenguaje Natural (PLN) y Machine Learning (ML) con la destacada herramienta NLTK, una biblioteca de Python especializada en el análisis y procesamiento del lenguaje natural.
 
-Utilizando NLTK, llevamos a cabo tareas fundamentales como la tokenización, dividendo el texto en unidades más pequeñas llamadas tokens, lo que resulta crucial para comprender la estructura gramatical y semántica de las opiniones. 
+Utilizando NLTK, llevamos a cabo tareas fundamentales como la tokenización, dividendo el texto en unidades más pequeñas llamadas tokens, lo que resulta crucial para comprender la estructura gramatical y semántica de las opiniones.
 
 En nuestra metodología, la categorización de la importancia desempeña un papel central, donde técnicas avanzadas de ML asignan pesos a términos y frases específicas en las reseñas. Estos pesos se vinculan directamente con las estrellas asignadas a un restaurante, basándonos en el análisis de sentimiento y la asociación de términos con aspectos clave de la experiencia del usuario, como la calidad de la comida o el servicio.
 
@@ -108,11 +146,20 @@ La integración de NLTK y la categorización de importancia nos permite generar 
 
 En resumen, la combinación de NLTK, el análisis de sentimiento y la categorización de importancia en nuestro enfoque innovador de análisis de opiniones garantiza una comprensión más profunda y precisa de las reseñas de usuarios, brindando recomendaciones más informadas y personalizadas.
 
+## Dashboard
 
 ## Conclusión
-
 En el universo de Viajes Expedition, las reseñas se tornan en pilares fundamentales que guían a los usuarios en la elección de los mejores restaurantes durante sus viajes. Este componente esencial se argumenta por diversas razones que reflejan la importancia que estas opiniones tienen en la experiencia gastronómica de los viajeros.
 
 Las reseñas actúan como una guía confiable en la selección de restaurantes, destacando aquellos lugares que han dejado una impresión positiva en otros viajeros. Este componente social de las reseñas no solo influye en la elección de un restaurante en particular, sino que también contribuye a la creación de una experiencia gastronómica compartida entre los usuarios de Viajes Expedition.
 
 En resumen, en el contexto de Viajes Expedition, las reseñas no son solo comentarios aislados, sino herramientas esenciales que moldean las elecciones gastronómicas de los usuarios. Estas opiniones no solo informan, sino que también enriquecen la experiencia de viaje al conectar a los usuarios con los mejores restaurantes, contribuyendo así a una vivencia culinaria memorable durante sus expediciones.
+## Autores
+
+Los enlaces los llevaran a sus perfiles de LinkedIn.
+
++ [Francisco Angulo](https://www.linkedin.com/in/franciscomanuelangulo/)
++ [Javier Dichiachio](https://www.linkedin.com/in/javier-dichiachio-34104857/)
++ [Kathiuska Mangones](https://www.linkedin.com/in/kathiuska-mangones-ramos-1b494913b/)
++ [Luis Laurence](https://www.linkedin.com/in/luis-alberto-laurence-salas-036a32187/)
++ [Mariano Baigorria](https://www.linkedin.com/in/mariano-baigorria-b85004282/)
