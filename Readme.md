@@ -146,8 +146,10 @@ El mismo incluye:
 + **Tabla** que incluye el **nombre del restaurante** y la **valoración o rating promedio de las reseñas** en el período.
 + **3 KPIs**: **evolución del rating promedio, satisfacción del cliente y evolución de los accesos o checkin** (a desarrollar en el punto siguiente).
 
-### Vista previa del dashboard (AGREGARRRRRRRRRRRRRRRRR):
-
+### Vista previa del dashboard:
+<p align="center">
+<img src="src\dashboard_powerbi.gif" height=400>
+</p>
 
 ### Indicadores Clave de Desempeño (KPIs):
 
