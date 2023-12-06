@@ -160,14 +160,12 @@ La valoración o rating promedio cuantifica la percepción general del público 
 
   > **Evolución_rating = (Rating promedio / Rating promedio año anterior - 1) * 100**
 
-<br>
 
 * **Satisfacción del cliente (% Reviews Positivas):**
 La satisfacción del cliente se convierte en un KPI vital al evaluar el éxito de una iniciativa. Se calcula como la proporción de reseñas con expresión de sentimiento positivo (sentiment_score mayor a 0.5) con respecto al total de reseñas, y se establece como **objetivo** para este indicador un valor de **50% como mínimo** en el período de análisis. La fórmula es la siguiente:
 
    > **Satisfacción_cliente = Cantidad de reseñas con expresión de sentimiento positivo / Total reseñas * 100**
 
-<br>
 
 * **Satisfacción del Cliente - Evolución:**
 La evolución de la satisfacción del cliente es una métrica dinámica que compara la satisfacción actual con la del año anterior. Este KPI ofrece perspectivas sobre las tendencias a lo largo del tiempo, permitiendo a las organizaciones entender cómo ha evolucionado la percepción del cliente y adaptarse en consecuencia. El **objetivo** propuesto es que el índice de satisfacción **incremente un 5%** de un año a otro.
@@ -175,7 +173,6 @@ La fórmula es la siguiente:
 
    > **Evolución_Satisfacción_cliente = (Satisfacción_cliente / Satisfacción_cliente año anterior - 1) * 100**
 
-<br>
 
 * **Evolución Checkin - Anual:**
 Este indicador evalúa la variación en la cantidad de accesos de clientes en un establecimiento o ubicación específica a lo largo del tiempo, por lo que el mismo permite realizar un seguimiento de la popularidad del local y planificar la necesidad de personal en distintos momentos del año. El **objetivo** propuesto es un **10% de crecimiento** en la cantidad de accesos respecto del mismo período del año anterior. La fórmula de cálculo es la siguiente: 
