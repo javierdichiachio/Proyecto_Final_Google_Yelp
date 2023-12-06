@@ -104,7 +104,7 @@ La carga incremental es esencial en nuestro proyecto para mantener una base con 
 
 + En la etapa final, **ejecutamos una consulta programada** en BigQuery cuya función principal es **comparar** la información de la tabla auxiliar **con la base original**, e **insertarlos en la misma** en caso de no existir, evitando la duplicación de datos. 
 
-+ Una vez completada esta operación, **vaciamos las tablas auxiliares** dando finalización al proceso. 
++ Una vez completada esta operación, la misma consulta programada descripta anteriomente **vacía las tablas auxiliares**, dando finalización al proceso. 
 
 <br>
 
