@@ -84,18 +84,18 @@ Este proyecto se basa en la metodología Scrum, la cual es altamente eficaz en e
 
 ## Stack Tecnológico 
 <p align="center">
-<img src="src\Stack tecnologico.PNG" height=400>
+<img src="src\Stack nuevo.PNG" height=400>
 </p>
 
 El stack tecnológico seleccionado para este proyecto se compone de herramientas y plataformas líderes que han sido cuidadosamente elegidas para maximizar la eficiencia y la calidad en el desarrollo. Aquí hay una descripción de cada componente y las razones detrás de su elección:
 
 **Google Cloud**: Utilizamos Google Cloud como nuestra plataforma de nube principal debido a su escalabilidad, confiabilidad y conjunto integral de servicios. Google Cloud proporciona un entorno robusto para implementar, gestionar y escalar nuestras aplicaciones y servicios de manera eficiente.
 
-**Jira Software**: Jira Software es una herramienta de gestión de proyectos ágil que facilita la planificación, seguimiento y entrega de software de alta calidad. La elección de Jira Software se basa en su capacidad para respaldar metodologías ágiles, como Scrum, permitiéndonos organizar y priorizar tareas de manera efectiva.
-
 **GitHub**: GitHub es una plataforma esencial para el control de versiones y la colaboración en desarrollo de software. Facilita la colaboración entre miembros del equipo, permitiendo la revisión de código, la gestión de problemas y el seguimiento de cambios. GitHub asegura un flujo de trabajo fluido y una integración continua efectiva.
 
 **Python**: Python se ha convertido en el lenguaje de programación elegido debido a su simplicidad, legibilidad y versatilidad. Es una herramienta poderosa para el análisis de datos, la manipulación de datos y el desarrollo de aplicaciones, lo que lo hace ideal para nuestros propósitos.
+
+**Mage**: es una herramienta de orquestación de contenedores que se utiliza para automatizar la implementación, el escalado y la administración de cargas de trabajo y servicios en contenedores. La orquestación de contenedores es la automatización y gestión del ciclo de vida de contenedores y servicios. Es un proceso de gestión y organización de múltiples contenedores y arquitectura de microservicios a escala.
 
 **NLTK (Natural Language Toolkit)**: NLTK es una biblioteca de Python utilizada para procesar y analizar texto. Su inclusión en el stack tecnológico se debe a su capacidad para trabajar con procesamiento de lenguaje natural (NLP), lo que es esencial para comprender y analizar las reseñas y comentarios en nuestro proyecto.
 
@@ -118,7 +118,7 @@ El proceso de ETL es un proceso fundamental en el mundo de la gestión de datos 
 ## Carga Incremental
 
 <p align="center">
-<img src="src\cargaIncremental.PNG" height=400>
+<img src="src\carga incremental.PNG" height=400>
 </p>
 
 La carga incremental es esencial en nuestro proyecto para mantener actualizados nuestros modelos con los nuevos datos de manera eficiente. Este proceso consta de varias etapas automatizadas:
