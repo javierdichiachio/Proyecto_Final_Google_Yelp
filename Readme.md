@@ -231,7 +231,7 @@ En resumen, en el contexto de Viajes Expedition, las reseñas no son solo coment
 
 ## Carpeta raíz del repositorio
 
-+ [Diccionario de Datos](Diccionario_de_datos.docx)
++ [Diccionario de Datos](Diccionario_de_datos.pdf)
 
 
 ## Autores
