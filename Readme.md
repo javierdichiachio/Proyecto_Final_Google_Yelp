@@ -16,7 +16,6 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 
 # Indice
 
-
 - [Planteamiento del Proyecto](#planteamiento-del-proyecto)
 - [Objetivo y alcance del proyecto](#objetivo-y-alcance-del-proyecto)
 - [Metodologías](#metodologías)
@@ -57,7 +56,7 @@ Para la realización de este proyecto implementaremos la **metodología Scrum**,
 
 ## Stack Tecnológico 
 <p align="center">
-<img src="src\Stack_final.PNG" height=400>
+<img src="src\Stack_final.png" height=400>
 </p>
 
 El stack tecnológico seleccionado para este proyecto se compone de herramientas y plataformas líderes que han sido cuidadosamente elegidas para maximizar la eficiencia y la calidad en el desarrollo. Aquí hay una descripción de cada componente y las razones detrás de su elección:
@@ -71,6 +70,13 @@ El stack tecnológico seleccionado para este proyecto se compone de herramientas
 **Mage**: es una herramienta de orquestación de contenedores que se utiliza para automatizar la implementación, el escalado y la administración de cargas de trabajo y servicios en contenedores. La orquestación de contenedores implica la automatización y gestión del ciclo de vida de los mismos. 
 
 **NLTK (Natural Language Toolkit)**: NLTK es una biblioteca de Python utilizada para procesar y analizar texto. Su inclusión en el stack tecnológico se debe a su capacidad para trabajar con procesamiento de lenguaje natural (NLP), lo que es esencial para comprender y analizar las reseñas y comentarios en nuestro proyecto.
+
+**LangChain**: LangChain es un framework para construir aplicaciones con modelos de lenguaje de gran tamaño (LLMs)2. También es un framework que utiliza LLMs para crear aplicaciones de inteligencia artificial, tales como chatbots similares al famoso ChatGPT, sistemas de preguntas sobre documentos, análisis automatizado de datos, sistemas de recomendación, asistentes virtuales personalizados y más. 
+Las Cadenas son el núcleo vital de LangChain. Estas conexiones lógicas entre uno o más LLMs son la columna vertebral de la funcionalidad de LangChain1. Las Cadenas pueden ser simples o complejas, según las necesidades y los LLMs involucrados.
+
+**Folium**: Folium es una biblioteca de Python que se utiliza para crear mapas interactivos. Su inclusión en el stack tecnológico se debe a su capacidad para trabajar con mapas interactivos, lo que es esencial para comprender y analizar las reseñas y comentarios en nuestro proyecto.
+
+**Streamlit**: es un marco de desarrollo de código abierto para crear aplicaciones web interactivas con Python: permite de manera sencilla e integrada desarrollar aplicaciones gracias a la interacción con otras librerías para su empleo en campos de la teledetección, ciencia de datos, etc.
 
 Cada componente de este stack ha sido seleccionado cuidadosamente para contribuir a la eficacia, escalabilidad y calidad del proyecto, garantizando así una implementación exitosa y resultados sobresalientes.
 
@@ -112,22 +118,29 @@ La carga incremental es esencial en nuestro proyecto para mantener una base con 
 
 
 ## Producto Machine Learning (ML): Sistema de recomendación de restaurantes de comida latinoamericana
-
 En nuestro enfoque innovador de análisis de opiniones de usuarios, aprovechamos técnicas avanzadas de Procesamiento de Lenguaje Natural (NLP) y Machine Learning (ML) con la destacada herramienta NLTK, una biblioteca de Python especializada en el análisis y procesamiento del lenguaje natural.
 
 A traves de una función llamada **SentimentIntensityAnalyzer()**, llevamos a cabo un análisis de la intensidad del sentimiento contenido en las reseñas de usuarios de las plataformas de Google Maps y Yelp: la función utiliza recursos léxicos internos para asignar puntuaciones a las palabras en función de su carga sentimental, obteniendo como **resultado** una **puntuación numérica** que indica la **intensidad del sentimiento** en el texto. Esta puntuación puede variar **desde -1 (muy negativo) hasta 1 (muy positivo)**; **valores cercanos a 0** indican una **intensidad baja o neutral**. 
 
 La integración de NLTK y el análisis de sentimiento nos **permite generar un rating compuesto** más preciso y representativo, **considerando** no sólo la **calificación numérica de las estrellas** incluida en la **reseña**, sino también la **puntuación numérica de intensidad de sentimiento** descripta anteriormente. Este enfoque refinado captura la complejidad de las opiniones, incluyendo la intensidad emocional asociada a diferentes aspectos, proporcionando a los usuarios una evaluación más matizada y detallada de cada restaurante.
 
-Por último, el **rating compuesto** obtenido en el proceso anterior se utiliza como **criterio base** para establecer un **ranking de recomendaciones más preciso** que se utilizará en el sistema de recomendación de restaurantes alojado en Streamlit.
+Posteriormente, el **rating compuesto** obtenido en el proceso anterior se utiliza como **criterio base** para establecer un **ranking de recomendaciones más preciso** que se utilizará en el sistema de recomendación de restaurantes alojado en Streamlit y explicado a continuación.
+
+LangChain es una biblioteca diseñada para simplificar la interacción con varios proveedores de grandes modelos de lenguaje (LLMs) como OpenAI. En el contexto de un proyecto de recomendación de restaurantes, LangChain se utiliza para analizar y procesar reseñas de restaurantes y otros datos relacionados con el lenguaje.
+
+En nuestro caso, se crea un sistema que toma las reseñas de los clientes de varios restaurantes en California, las procesa utilizando **LangChain** y luego utiliza los resultados para hacer recomendaciones personalizadas a los usuarios. Este sistema tiene en cuenta factores como las preferencias con ratings del usuario, su ubicación, el tipo de comida que le gusta, tambien utiliza el análisis de sentimiento de las reseñas de los usuarios y la ubicación de los restaurantes para hacer recomendaciones y muestra en el mapa los restaurantes de la respuesta y los muestra en el mapa:
+
+<p align="center">
+<img src="src\Streamlit.png" height=300>
+</p>
+
+Es importante mencionar que la implementación de un proyecto de este tipo requeriría un conocimiento sólido de la programación y el procesamiento del lenguaje natural, así como acceso a una base de datos de restaurantes y reseñas.
 
 ### Chatbot de recomendaciones - Deploy en Streamlit
-
 > La aplicación se encuentra disponible en la siguiente [ubicación](https://apprestaurantes-mumgsqtzxzqsbvrq6gynxo.streamlit.app/).
 
 
 ## Dashboard interactivo en Power BI
-
 El dashboard desarrollado tiene como **objetivo principal** ofrecer una **visión rápida y detallada de las valoraciones de restaurantes** realizadas por los usuarios.
 
 Se organiza en **3 páginas o tableros**:
