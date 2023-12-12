@@ -14,7 +14,7 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 <img src="src\integrantes3.png" height=250>
 </p>
 
-# Indice
+# Indice (README)
 
 - [Planteamiento del Proyecto](#planteamiento-del-proyecto)
 - [Objetivo y alcance del proyecto](#objetivo-y-alcance-del-proyecto)
@@ -208,6 +208,30 @@ En el universo de Viajes Expedition, las reseñas se tornan en pilares fundament
 Las reseñas actúan como una guía confiable en la selección de restaurantes, destacando aquellos lugares que han dejado una impresión positiva en otros viajeros. Este componente social de las reseñas no solo influye en la elección de un restaurante en particular, sino que también contribuye a la creación de una experiencia gastronómica compartida entre los usuarios de Viajes Expedition.
 
 En resumen, en el contexto de Viajes Expedition, las reseñas no son solo comentarios aislados, sino herramientas esenciales que moldean las elecciones gastronómicas de los usuarios. Estas opiniones no solo informan, sino que también enriquecen la experiencia de viaje al conectar a los usuarios con los mejores restaurantes, contribuyendo así a una vivencia culinaria memorable durante sus expediciones.
+
+
+
+# Índice de Archivos del Repositorio
+
+## Carpeta Data
+
++ Incluye los archivos parquet que contienen toda la información de reviews y restaurantes luego del proceso de ETL. Es la misma información que está almacenada en Big Query.
+
+## Carpeta EDA-ETL
+
++ Incluye los archivos donde se realizan los procesos de Análisis Exploratorio de Datos (EDA) y Extracción, Transformación y Carga (ETL), que luego se automatizan a través de Mage y se almacena en Big Query.
+
+## Carpeta Power BI
+
++ Incluye el Dashboard desarrollado en Power BI Desktop y que fue subido a Power BI Service.
+
+## Carpeta Streamlit
+
++ Incluye los archivos necesarios para montar el chatbot de recomendaciones de restaurantes en Streamlit.
+
+## Carpeta raíz del repositorio
+
++ [Diccionario de Datos](Diccionario_de_datos.docx)
 
 
 ## Autores
