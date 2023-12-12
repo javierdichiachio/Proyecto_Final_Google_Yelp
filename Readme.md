@@ -26,6 +26,7 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 - [Dashboard interactivo en Power BI](#dashboard-interactivo-en-power-bi)
 - [Indicadores Clave de Desempeño (KPIs)](#indicadores-clave-de-desempeño-kpis)
 - [Conclusión](#conclusión)
+- [Índice de Archivos del Repositorio](#índice-de-archivos-del-repositorio)
 - [Autores](#autores)
 
 # Planteamiento del Proyecto
