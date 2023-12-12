@@ -11,7 +11,7 @@ DataSolutions, es una empresa líder en el campo de análisis de datos, se posic
 # Equipo encargado del proyecto
 
 <p align="center">
-<img src="src\integrantes2.png" height=250>
+<img src="src\integrantes3.png" height=250>
 </p>
 
 # Indice
@@ -57,7 +57,7 @@ Para la realización de este proyecto implementaremos la **metodología Scrum**,
 
 ## Stack Tecnológico 
 <p align="center">
-<img src="src\Stack_nuevo.PNG" height=400>
+<img src="src\Stack_final.PNG" height=400>
 </p>
 
 El stack tecnológico seleccionado para este proyecto se compone de herramientas y plataformas líderes que han sido cuidadosamente elegidas para maximizar la eficiencia y la calidad en el desarrollo. Aquí hay una descripción de cada componente y las razones detrás de su elección:
@@ -121,6 +121,10 @@ La integración de NLTK y el análisis de sentimiento nos **permite generar un r
 
 Por último, el **rating compuesto** obtenido en el proceso anterior se utiliza como **criterio base** para establecer un **ranking de recomendaciones más preciso** que se utilizará en el sistema de recomendación de restaurantes alojado en Streamlit.
 
+### Chatbot de recomendaciones - Deploy en Streamlit
+
+> La aplicación se encuentra disponible en la siguiente [ubicación](https://apprestaurantes-mumgsqtzxzqsbvrq6gynxo.streamlit.app/).
+
 
 ## Dashboard interactivo en Power BI
 
@@ -135,7 +139,7 @@ El mismo incluye:
 
 + **3 Segmentadores (filtros)**: por **año, mes** y por **categoría de restaurant**.
 + **Mapa** que incluye la **localización de los restaurantes** y la **clasificación de los mismos** en función a la **cantidad de estrellas**.
-+ **Tabla** que incluye el **nombre del restaurante** y la **valoración o rating promedio de las reseñas** en el período.
++ **Tabla** que incluye el **nombre del restaurante**, la **valoración o rating promedio de las reseñas** y la **cantidad de reviews** en el período.
 + **3 KPIs**: **evolución del rating promedio, satisfacción del cliente y evolución de la satisfacción del cliente** (a desarrollar en el punto siguiente).
 
 > 3. **Yelp**: Incluye información referente a las reseñas sobre restaurantes de comida latinoamericana realizadas por los usuarios de la plataforma Yelp.
@@ -150,6 +154,8 @@ El mismo incluye:
 <p align="center">
 <img src="src\dashboard_powerbi.gif" height=400>
 </p>
+
+> Se puede **acceder** a una **versión online** del **dashboard** ingresando en el siguiente [link](https://app.powerbi.com/view?r=eyJrIjoiNzU3OTVkNTEtNWQzNC00ZDhkLThiN2QtM2VhZTE1NzQ1ZWYyIiwidCI6IjQyNzViZDI3LTVmYjktNDEyNy1hZmE1LWVmZDU3OTdmMTNhOSIsImMiOjR9).
 
 ### Indicadores Clave de Desempeño (KPIs):
 
