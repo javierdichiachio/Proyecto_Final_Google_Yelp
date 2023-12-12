@@ -70,7 +70,7 @@ st.write(m)
 query = st.text_input("Escribe aquí tu pregunta")
 
 if st.button('Buscar'):
-    with st.spinner('Procesando...'):
+    with st.spinner('Procesando....'):
         
         results = agent.run(query)
         
