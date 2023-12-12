@@ -1,0 +1,15 @@
+fuzzywuzzy
+folium
+streamlit
+branca==0.3.1
+numpy
+pandas
+folium
+langchain
+langchain-core
+langchain-experimental
+langdetect
+langsmith
+openai
+tabulate
+streamlit-folium
