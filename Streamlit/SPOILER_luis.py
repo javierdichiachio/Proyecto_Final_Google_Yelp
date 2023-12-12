@@ -47,7 +47,6 @@ right: 2rem;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 st.sidebar.header("Configuration")
 
-#ruta_archivo = r'C:\Users\baby_\OneDrive\Escritorio\streamlitproyect\restaurante_google.csv'
 df_restaurantes = pd.read_csv("SPOILER_nombres_restaurantes_latitud_longitud.csv")
 
 
@@ -81,10 +80,7 @@ if st.button('Buscar'):
         
         
         if isinstance(results, str):
-            # Extrae los nombres de los restaurantes de la respuesta
             names = re.findall(r'(\w+)', results)
-            
-            # Busca los nombres de los restaurantes en el DataFrame utilizando búsqueda difusa
             matching_restaurants = []
             for name in names:
                 match = process.extractOne(name, df_restaurantes['name'])
@@ -100,7 +96,5 @@ if st.button('Buscar'):
                 
                 for index, row in matching_restaurants.iterrows():
                     folium.Marker([row['latitude'], row['longitude']], popup=row['name']).add_to(m)
-                
-                # Asegúrate de que el mapa se muestre en Streamlit
                 folium_static(m)
 
